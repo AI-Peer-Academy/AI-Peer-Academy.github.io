@@ -1,171 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Peer Academy - PeerStudy Group</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #f59e0b;
-            --bg-gradient: linear-gradient(135deg, #f6f8fc 0%, #e9f0f9 100%);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 ML Algorithms (Excluding Neural Networks)</title>
+  <style>
+    /* Your CSS styles here */
+    .algorithm-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f8f8f8;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background: var(--bg-gradient);
-            color: #333;
-        }
+    .algorithm-card h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-            color: white;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .course-card {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .price {
-            display: inline-block;
-            background: var(--accent-color);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        .free-tag {
-            background: #10b981;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        .live-tag {
-            background: #ef4444;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin-left: 10px;
-        }
-
-        .syllabus {
-            background: #f8fafc;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-
-        .contact-info {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .social-links a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
-        .highlight {
-            background: #fef3c7;
-            padding: 2px 5px;
-            border-radius: 4px;
-        }
-    </style>
+    .algorithm-card p {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>AI Peer Academy</h1>
-            <p>PeerStudy group of MTech DS / AI WILP program</p>
-            <p>Affordable AI Education | (0 to 500 INR for Supporting AI-based LMS Development )</p>
-        </div>
+  <div class="container">
+    <h1>Top 10 ML Algorithms (Excluding Neural Networks)</h1>
 
-        <div class="course-card">
-            <h2>ML (1.0) for Absolute Beginners</h2>
-            <span class="price">199 INR</span>
-            <span class="live-tag">LIVE Sessions</span>
-            <p><strong>Started:</strong> 15th Nov 2024</p>
-            <p>Beginner-friendly ML Course - Master 5 essential ML algorithms with hands-on practice. Stress-free learning environment!</p>
-            <div class="syllabus">
-                <h3>What you'll learn:</h3>
-                <ol>
-                    <li>Linear Regression - Perfect first algorithm</li>
-                    <li>Logistic Regression - Master classification</li>
-                    <li>K-Nearest Neighbors (KNN) - Visual and intuitive</li>
-                    <li>Decision Trees - Both classification and regression</li>
-                    <li>K-Means Clustering - Introduction to unsupervised learning</li>
-                </ol>
-            </div>
-        </div>
-
-        <div class="course-card">
-            <h2>GenAI (1.0) for Absolute Beginners</h2>
-            <span class="price">299 INR</span>
-            <span class="live-tag">LIVE Sessions</span>
-            <p><strong>Starting:</strong> 19th Nov 2024</p>
-            <p>Hands-on Generative AI Course - Build a Quiz App with GenAI!</p>
-            <div class="syllabus">
-                <h3>Course Highlights:</h3>
-                <ul>
-                    <li>GenAI Foundations & API Implementation</li>
-                    <li>Question Answer Generation Systems</li>
-                    <li>Local LLM Implementation</li>
-                    <li>Streamlit Interface Development</li>
-                    <li>PDF Processing & Database Integration</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="course-card">
-            <h2>Industry Project: AI-based Channel Content Monitoring</h2>
-            <span class="free-tag">FREE</span>
-            <span class="live-tag">Ongoing Project</span>
-            <p>Open Source AI-based Channel content monitoring for IPTV/OTT/Cable TV headend</p>
-            <p><a href="https://manojkumarm75.github.io/AI_based_Audio-Video_Content-Analyser_OpenSource/" target="_blank">View Project Details →</a></p>
-        </div>
-
-        <div class="contact-info">
-            <h2>Connect With Us</h2>
-            <div class="social-links">
-                <a href="https://wa.me/qr/HH5MJ5LEZ2YBO1" target="_blank">💬 WhatsApp</a>
-                <a href="https://www.linkedin.com/in/manoj-mkm/" target="_blank">💼 LinkedIn</a>
-            </div>
-            <p><strong>Note:</strong> All courses include <span class="highlight">recorded sessions</span> for your convenience!</p>
-        </div>
+    <div class="algorithm-card">
+      <h2>1. Linear Regression</h2>
+      <p>Linear Regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Predicting house prices</li>
+        <li>Sales forecasting</li>
+        <li>Stock price prediction</li>
+      </ul>
     </div>
+
+    <div class="algorithm-card">
+      <h2>2. Logistic Regression</h2>
+      <p>Logistic Regression is a statistical method used to model the probability of a binary outcome.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Spam detection</li>
+        <li>Customer churn prediction</li>
+        <li>Medical diagnosis</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>3. Decision Trees</h2>
+      <p>Decision Trees are a supervised learning method used for both classification and regression tasks.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Customer segmentation</li>
+        <li>Fraud detection</li>
+        <li>Medical diagnosis</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>4. Random Forest</h2>
+      <p>Random Forest is an ensemble learning method that combines multiple decision trees to improve accuracy and reduce overfitting.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Predicting customer churn</li>
+        <li>Credit risk assessment</li>
+        <li>Image classification</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>5. Support Vector Machines (SVM)</h2>
+      <p>SVM is a supervised learning method used for classification and regression tasks.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Image classification</li>
+        <li>Text classification</li>
+        <li>Bioinformatics</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>6. Naive Bayes</h2>
+      <p>Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Text classification</li>
+        <li>Spam filtering</li>
+        <li>Sentiment analysis</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>7. K-Nearest Neighbors (KNN)</h2>
+      <p>KNN is a simple algorithm that classifies data points based on the majority class of their nearest neighbors.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Recommendation systems</li>
+        <li>Anomaly detection</li>
+        <li>Image recognition</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>8. K-Means Clustering</h2>
+      <p>K-Means Clustering is an unsupervised learning algorithm that groups similar data points together.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Customer segmentation</li>
+        <li>Image compression</li>
+        <li>Document clustering</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>9. Principal Component Analysis (PCA)</h2>
+      <p>PCA is a dimensionality reduction technique that reduces the number of features in a dataset while preserving most of the variance.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Feature extraction</li>
+        <li>Data visualization</li>
+        <li>Noise reduction</li>
+      </ul>
+    </div>
+
+    <div class="algorithm-card">
+      <h2>10. Gradient Boosting Machines (GBM)</h2>
+      <p>GBM is an ensemble learning method that combines multiple weak learners to create a strong predictive model.</p>
+      <p><strong>Use Cases:**</p>
+      <ul>
+        <li>Click-through rate prediction</li>
+        <li>Customer segmentation</li>
+        <li>Fraud detection</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>

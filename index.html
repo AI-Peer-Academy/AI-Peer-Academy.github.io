@@ -5,7 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Peer Academy - PeerStudy Group</title>
   <style>
-    /* Your existing CSS styles */
+     <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --bg-gradient: linear-gradient(135deg, #f6f8fc 0%, #e9f0f9 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: var(--bg-gradient);
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .free-tag {
+            background: #10b981;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .live-tag {
+            background: #ef4444;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .syllabus {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
   </style>
 </head>
 <body>

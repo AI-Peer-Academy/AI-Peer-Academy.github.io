@@ -36,17 +36,34 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .course-card {
+        details {
+            margin-bottom: 20px;
+        }
+        
+        summary {
             background: white;
             border-radius: 15px;
             padding: 25px;
-            margin-bottom: 30px;
+            cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-
-        .course-card:hover {
+        
+        summary:hover {
             transform: translateY(-5px);
+        }
+        
+        details[open] summary {
+            border-radius: 15px 15px 0 0;
+            margin-bottom: 0;
+        }
+        
+        .course-content {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            margin-top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .price {
@@ -104,6 +121,20 @@
             padding: 2px 5px;
             border-radius: 4px;
         }
+
+        .enrol-btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .enrol-btn:hover {
+            background: var(--secondary-color);
+        }
     </style>
 </head>
 <body>
@@ -114,96 +145,111 @@
             <p>Affordable AI Education | (0 to 1000 INR, mostly for Supporting AI-based LMS Development )</p>
         </div>
 
-        <div class="course-card">
-            <h2>ML (L1 2 3) for Absolute Beginners</h2>
-            <span class="price">750 INR</span>
-            <span class="live-tag">LIVE Sessions</span>
-            <p><strong>Start:</strong> 13th Dec 2024</p>
-            <a href="https://forms.office.com/r/1Rz7r0uwBA" target="_blank" class="enrol-btn">Enrol Now</a>
-            <p>Beginner-friendly ML Course - Master 10 essential ML algorithms with hands-on practice & interview preparation. Stress-free learning environment!</p>
-            <p><strong>Prerequisites:</strong> <span class="highlight">Should know Python beginner's level at least</span></p>
-            <div class="syllabus">
-                <h3>What you'll learn:</h3>
-                <ol>
-            <li>
-                <h4>Linear Regression</h4>
-                <p>Predicts continuous numerical values based on input features</p>
-                <p><strong>Applications:</strong> House prices, sales forecasting, stock prediction</p>
-            </li>
-            <li>
-                <h4>Logistic Regression</h4>
-                <p>Binary outcome probability prediction</p>
-                <p><strong>Applications:</strong> Spam detection, churn prediction, medical diagnosis</p>
-            </li>
-            <li>
-                <h4>Decision Trees</h4>
-                <p>Tree-like decision model with branching paths</p>
-                <p><strong>Applications:</strong> Customer segmentation, fraud detection</p>
-            </li>
-            <li>
-                <h4>Random Forest</h4>
-                <p>Ensemble method combining multiple decision trees</p>
-                <p><strong>Applications:</strong> Credit risk, image classification</p>
-            </li>
-            <li>
-                <h4>Support Vector Machines</h4>
-                <p>Optimal hyperplane classification</p>
-                <p><strong>Applications:</strong> Image & text classification, bioinformatics</p>
-            </li>
-            <li>
-                <h4>K-Nearest Neighbors</h4>
-                <p>Proximity-based classification algorithm</p>
-                <p><strong>Applications:</strong> Recommendation systems, anomaly detection</p>
-            </li>
-            <li>
-                <h4>K-Means Clustering</h4>
-                <p>Unsupervised learning for data grouping</p>
-                <p><strong>Applications:</strong> Customer segmentation, image compression</p>
-            </li>
-            <li>
-                <h4>PCA</h4>
-                <p>Dimensionality reduction technique</p>
-                <p><strong>Applications:</strong> Feature extraction, data visualization</p>
-            </li>
-            <li>
-                <h4>Gradient Boosting</h4>
-                <p>Sequential ensemble learning method</p>
-                <p><strong>Applications:</strong> Click-through prediction, fraud detection</p>
-            </li>
-            <li>
-                <h4>Naive Bayes</h4>
-                <p>Probabilistic classifier based on Bayes' theorem</p>
-                <p><strong>Applications:</strong> Text classification, sentiment analysis</p>
-            </li>
-                </ol>
+        <!-- ML Course -->
+        <details>
+            <summary>
+                <h2>ML (L1 2 3) for Absolute Beginners</h2>
+                <span class="price">750 INR</span>
+                <span class="live-tag">LIVE Sessions</span>
+            </summary>
+            <div class="course-content">
+                <p><strong>Start:</strong> 13th Dec 2024</p>
+                <a href="https://forms.office.com/r/1Rz7r0uwBA" target="_blank" class="enrol-btn">Enrol Now</a>
+                <p>Beginner-friendly ML Course - Master 10 essential ML algorithms with hands-on practice & interview preparation. Stress-free learning environment!</p>
+                <p><strong>Prerequisites:</strong> <span class="highlight">Should know Python beginner's level at least</span></p>
+                <div class="syllabus">
+                    <h3>What you'll learn:</h3>
+                    <ol>
+                        <li>
+                            <h4>Linear Regression</h4>
+                            <p>Predicts continuous numerical values based on input features</p>
+                            <p><strong>Applications:</strong> House prices, sales forecasting, stock prediction</p>
+                        </li>
+                        <li>
+                            <h4>Logistic Regression</h4>
+                            <p>Binary outcome probability prediction</p>
+                            <p><strong>Applications:</strong> Spam detection, churn prediction, medical diagnosis</p>
+                        </li>
+                        <li>
+                            <h4>Decision Trees</h4>
+                            <p>Tree-like decision model with branching paths</p>
+                            <p><strong>Applications:</strong> Customer segmentation, fraud detection</p>
+                        </li>
+                        <li>
+                            <h4>Random Forest</h4>
+                            <p>Ensemble method combining multiple decision trees</p>
+                            <p><strong>Applications:</strong> Credit risk, image classification</p>
+                        </li>
+                        <li>
+                            <h4>Support Vector Machines</h4>
+                            <p>Optimal hyperplane classification</p>
+                            <p><strong>Applications:</strong> Image & text classification, bioinformatics</p>
+                        </li>
+                        <li>
+                            <h4>K-Nearest Neighbors</h4>
+                            <p>Proximity-based classification algorithm</p>
+                            <p><strong>Applications:</strong> Recommendation systems, anomaly detection</p>
+                        </li>
+                        <li>
+                            <h4>K-Means Clustering</h4>
+                            <p>Unsupervised learning for data grouping</p>
+                            <p><strong>Applications:</strong> Customer segmentation, image compression</p>
+                        </li>
+                        <li>
+                            <h4>PCA</h4>
+                            <p>Dimensionality reduction technique</p>
+                            <p><strong>Applications:</strong> Feature extraction, data visualization</p>
+                        </li>
+                        <li>
+                            <h4>Gradient Boosting</h4>
+                            <p>Sequential ensemble learning method</p>
+                            <p><strong>Applications:</strong> Click-through prediction, fraud detection</p>
+                        </li>
+                        <li>
+                            <h4>Naive Bayes</h4>
+                            <p>Probabilistic classifier based on Bayes' theorem</p>
+                            <p><strong>Applications:</strong> Text classification, sentiment analysis</p>
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </div>
+        </details>
 
-        <div class="course-card">
-            <h2>GenAI (1.0) for Absolute Beginners</h2>
-            <span class="price">299 INR</span>
-            <span class="live-tag">LIVE Sessions</span>
-            <p><strong>Started:</strong> 19th Nov 2024</p>
-            <p>Hands-on Generative AI Course - Build a Quiz App with GenAI!</p>
-            <div class="syllabus">
-                <h3>Course Highlights:</h3>
-                <ul>
-                    <li>GenAI Foundations & API Implementation</li>
-                    <li>Question Answer Generation Systems</li>
-                    <li>Local LLM Implementation</li>
-                    <li>Streamlit Interface Development</li>
-                    <li>PDF Processing & Database Integration</li>
-                </ul>
+        <!-- GenAI Course -->
+        <details>
+            <summary>
+                <h2>GenAI (1.0) for Absolute Beginners</h2>
+                <span class="price">299 INR</span>
+                <span class="live-tag">LIVE Sessions</span>
+            </summary>
+            <div class="course-content">
+                <p><strong>Started:</strong> 19th Nov 2024</p>
+                <p>Hands-on Generative AI Course - Build a Quiz App with GenAI!</p>
+                <div class="syllabus">
+                    <h3>Course Highlights:</h3>
+                    <ul>
+                        <li>GenAI Foundations & API Implementation</li>
+                        <li>Question Answer Generation Systems</li>
+                        <li>Local LLM Implementation</li>
+                        <li>Streamlit Interface Development</li>
+                        <li>PDF Processing & Database Integration</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </details>
 
-        <div class="course-card">
-            <h2>Industry Project: AI-based Channel Content Monitoring</h2>
-            <span class="free-tag">FREE</span>
-            <span class="live-tag">Ongoing Project</span>
-            <p>Open Source AI-based Channel content monitoring for IPTV/OTT/Cable TV headend</p>
-            <p><a href="https://manojkumarm75.github.io/AI_based_Audio-Video_Content-Analyser_OpenSource/" target="_blank">View Project Details →</a></p>
-        </div>
+        <!-- Industry Project -->
+        <details>
+            <summary>
+                <h2>Industry Project: AI-based Channel Content Monitoring</h2>
+                <span class="free-tag">FREE</span>
+                <span class="live-tag">Ongoing Project</span>
+            </summary>
+            <div class="course-content">
+                <p>Open Source AI-based Channel content monitoring for IPTV/OTT/Cable TV headend</p>
+                <p><a href="https://manojkumarm75.github.io/AI_based_Audio-Video_Content-Analyser_OpenSource/" target="_blank">View Project Details →</a></p>
+            </div>
+        </details>
 
         <div class="contact-info">
             <h2>Connect With Us</h2>

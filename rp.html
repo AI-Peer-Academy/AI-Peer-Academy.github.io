@@ -1,94 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI-Peer-Academy</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .hero-section {
       background-image: url('https://images.unsplash.com/photo-1507595784082-568d872cd8e0?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1N3wwfDF8c2VhcmNofDJ8fGdlbmVyYXRpdmUlMjBhaXxlbnwwfHx8fDE2Nzg3NTE3MjE&ixlib=rb-1.2.1&q=80&w=1080');
       background-size: cover;
       background-position: center;
+      height: 400px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #f39c12;
     }
   </style>
 </head>
-<body class="font-sans bg-gray-50">
 
-  <header class="hero-section h-96 flex items-center justify-center text-white text-center px-6">
-    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
-      <h1 class="text-4xl font-bold">AI-Peer-Academy</h1>
-      <p class="mt-4 text-lg">Beginner-friendly research paper publishing in AI, Data Science, GenAI and more</p>
+<body class="bg-light">
+
+  <header class="hero-section d-flex align-items-center justify-content-center text-white text-center">
+    <div class="bg-dark bg-opacity-50 p-5 rounded">
+      <h1 class="display-4">AI-Peer-Academy</h1>
+      <p class="lead">Beginner-friendly research paper publishing in AI, Data Science, GenAI, and more</p>
     </div>
   </header>
 
-  <main class="container mx-auto px-6 py-12">
-    <section class="bg-white shadow-lg rounded-lg p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
-        MKM welcomes you to <strong>AI-Peer-Academy</strong>, your trusted platform for beginner-friendly research paper publishing.
-        In 2024, we published a <strong>Generative AI-based research paper</strong> in a <strong>Q4 Scopus journal</strong>, and we are continuing this journey in 2025.
-      </p>
-      <p class="mt-4 text-gray-700 text-lg">
-        Our goal for this year is to publish <strong>12 review papers</strong>—one every month. The first paper of the year, focusing on <strong>Data Science / Generative AI / Computer Vision</strong>, is planned to be published in this month (Jan 2025).
-      </p>
-      <p class="mt-4 text-gray-700 text-lg">
-        Each paper can have a maximum of 6 members. Currently, 2 slots are filled, and we invite beginners to join as co-authors, even if it's your first step into research paper publishing.
-      </p>
+  <main class="container my-5">
+    <!-- About Us Section -->
+    <section class="bg-white shadow-sm rounded p-4 mb-5">
+      <h2 class="h3 text-dark mb-3">About Us</h2>
+      <p class="text-muted">MKM welcomes you to <strong>AI-Peer-Academy</strong>, your trusted platform for beginner-friendly research paper publishing.
+        In 2024, we published a <strong>Generative AI-based research paper</strong> in a <strong>Q4 Scopus journal</strong>, and we are continuing this journey in 2025.</p>
+      <p class="text-muted">Our goal for this year is to publish <strong>12 review papers</strong>—one every month. The first paper of the year, focusing on <strong>Data Science / Generative AI / Computer Vision</strong>, is planned to be published in this month (Jan 2025).</p>
+      <p class="text-muted">Each paper can have a maximum of 6 members. Currently, 2 slots are filled, and we invite beginners to join as co-authors, even if it's your first step into research paper publishing.</p>
     </section>
 
-    <section class="bg-blue-50 shadow-lg rounded-lg p-8 mb-12">
-      <h2 class="text-2xl font-semibold text-blue-600 mb-4">Why Join Us?</h2>
-      <ul class="list-disc list-inside text-gray-700 text-lg">
-        <li>Step-by-step guidance for research paper preparation and publishing.</li>
-        <li>Opportunities to work on cutting-edge topics like <strong>Generative AI</strong>, <strong>Data Science</strong>, and <strong>Computer Vision</strong>.</li>
-        <li>Shared expenses for : Expert reviews, development cost, freelancer support, and full publishing cost coverage etc.</li>
-        <li>Targeted publishing in Scopus <strong>Q3 or Q4 journals</strong>.</li>
-        <li>Comprehensive peer-learning sessions to grow as a associate researcher.</li>
+    <!-- Why Join Us Section -->
+    <section class="bg-light p-4 shadow-sm rounded mb-5">
+      <h2 class="h4 text-primary mb-3">Why Join Us?</h2>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle me-2"></i> Step-by-step guidance for research paper preparation and publishing.</li>
+        <li><i class="bi bi-check-circle me-2"></i> Opportunities to work on cutting-edge topics like <strong>Generative AI</strong>, <strong>Data Science</strong>, and <strong>Computer Vision</strong>.</li>
+        <li><i class="bi bi-check-circle me-2"></i> Shared expenses for expert reviews, development cost, freelancer support, and full publishing cost coverage.</li>
+        <li><i class="bi bi-check-circle me-2"></i> Targeted publishing in Scopus <strong>Q3 or Q4 journals</strong>.</li>
+        <li><i class="bi bi-check-circle me-2"></i> Comprehensive peer-learning sessions to grow as an associate researcher.</li>
       </ul>
-      <p class="mt-4 text-gray-700 text-lg">
-        All costs are covered: guidance, expert reviews, development cost (if any) freelancer fees (if any), publishing costs, and a donation for the LMS (Learning Management System), etc.
-      </p>
+      <p class="text-muted">All costs are covered: guidance, expert reviews, development cost (if any), freelancer fees (if any), publishing costs, and a donation for the LMS (Learning Management System).</p>
     </section>
 
-    <section class="bg-white shadow-lg rounded-lg p-8 mb-12">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Achievements</h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
-    In <strong>2024</strong>, we proudly published a <strong>Generative AI-based research paper</strong> in a prestigious <strong>Q4 Scopus journal</strong>.
-    This showcases our ability to guide beginners and experienced researchers alike through the publishing process.
-  </p>
-  <p class="text-gray-700 text-lg leading-relaxed mt-4">
-    You can read the published paper here: 
-    <a href="https://journal.esrgroups.org/jes/article/view/2030" class="text-blue-600 hover:underline" target="_blank">Generative AI-Based Research Paper</a>.
-  </p>
-</section>
+    <!-- Achievements Section -->
+    <section class="bg-white shadow-sm rounded p-4 mb-5">
+      <h2 class="h4 text-dark mb-3">Our Achievements</h2>
+      <p class="text-muted">In <strong>2024</strong>, we proudly published a <strong>Generative AI-based research paper</strong> in a prestigious <strong>Q4 Scopus journal</strong>.
+        This showcases our ability to guide beginners and experienced researchers alike through the publishing process.</p>
+      <p class="text-muted">You can read the published paper <a href="https://journal.esrgroups.org/jes/article/view/2030" target="_blank" class="text-primary">here</a>.</p>
+    </section>
 
-<section class="text-center mb-12">
-  <p class="text-lg text-gray-800 mb-4">Ready to join our research journey? Click below to enroll:</p>
-  <a href="https://rzp.io/rzp/91Q8zgdO" target="_blank">
-    <button class="bg-blue-600 text-white py-3 px-8 rounded-lg text-xl hover:bg-blue-700 transition duration-300">
-      Enroll Now
-    </button>
-  </a>
-</section>
+    <!-- Connect With Us Section -->
+    <section class="bg-light p-4 shadow-sm rounded mb-5">
+      <h2 class="h4 text-dark mb-3">Connect With Us</h2>
+      <div class="d-flex justify-content-start mb-3">
+        <a href="https://chat.whatsapp.com/KXLTqLpZdsqE6zYPVwGYRo" target="_blank" class="btn btn-success me-3">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/manoj-mkm/" target="_blank" class="btn btn-primary">💼 LinkedIn</a>
+      </div>
+      <p class="text-muted"><strong>Support:</strong> All the peer sessions are <span class="highlight">recorded</span>, can reach out to us for any doubts or discussions.</p>
+    </section>
 
-
-<section class="bg-white shadow-lg rounded-lg p-8 mb-12">
-    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Connect With Us</h2>
-    <div class="social-links mb-4">
-      <a href="https://chat.whatsapp.com/KXLTqLpZdsqE6zYPVwGYRo" target="_blank" class="text-blue-600 hover:underline">💬 WhatsApp</a>
-      <a href="https://www.linkedin.com/in/manoj-mkm/" target="_blank" class="text-blue-600 hover:underline ml-4">💼 LinkedIn</a>
-    </div>
-    <p class="text-gray-700 text-lg">
-      <strong>Note:</strong> All these peer sessions are <span class="highlight">recorded</span> for your convenience!
-    </p>
-  </section>
-
+    <!-- Enroll Now Section -->
+    <section class="text-center mb-5">
+      <p class="h4 text-muted">Ready to join our research journey? Click below to enroll:</p>
+      <a href="https://rzp.io/rzp/91Q8zgdO" target="_blank" class="btn btn-lg btn-primary">Enroll Now</a>
+    </section>
   </main>
 
-  <footer class="bg-blue-600 text-white py-6 text-center">
+  <!-- Footer Section -->
+  <footer class="bg-primary text-white text-center py-3">
     <p>&copy; 2025 AI-Peer-Academy by MKM. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
